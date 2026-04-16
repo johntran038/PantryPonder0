@@ -4,16 +4,19 @@ import viteLogo from '/vite.svg'
 import Sidebar from "../components/Sidebar";
 import FreeHeightPanel from "../components/FreeHeightPanel";
 import Post from "../components/Post";
+import PopUp from "../components/PopUp";
 
 const Home = () => {
+    
+    const [openPopup, setOpenPopup] = useState(false);
 
     return (
         <div className="">
             <div className="fixed inset-0 flex items-center justify-center z-999 pointer-events-none">
-                <div className="bg-white rounded-lg shadow-lg p-6 w-80 outline pointer-events-auto"></div>
+                <PopUp open={openPopup} setOpen={setOpenPopup}/>
             </div>
             <div className="h-screen grid grid-cols-8">
-                <Sidebar/>
+                <Sidebar onClick={setOpenPopup}/>
                 <div className="bg-blue-200 col-span-7 p-2">
                     <FreeHeightPanel cols={5}>
                         <Post className="h-40 bg-red-500" />

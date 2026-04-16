@@ -1,6 +1,6 @@
 import React from "react";
 
-const Sidebar = ({ className }) => {
+const Sidebar = ({ className, onClick }) => {
     return (
         <div className="bg-green-200">
             <div className="mt-10 sticky top-0 space-y-2">
@@ -8,7 +8,12 @@ const Sidebar = ({ className }) => {
                     Discover
                 </div>
                 <div className="bg-red-200 flex justify-center items-center">
-                    <button>My Pantry</button>
+                    <button 
+                        onClick={
+                            ()=>{onClick(true)}
+                        }>
+                            My Pantry
+                    </button>
                 </div>
                 <div className="bg-red-200 flex justify-center items-center">
                     <button>Saved Dishes</button>
