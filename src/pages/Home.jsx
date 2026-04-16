@@ -10,7 +10,6 @@ const Home = () => {
     
     const [openPopup, setOpenPopup] = useState(false);
 
-    
     return (
         <div className="">
             <div className="fixed inset-0 flex items-center justify-center z-999 pointer-events-none">
@@ -59,7 +58,7 @@ const Home = () => {
                         <Post className="h-40 bg-green-500"></Post>
                         <Post className="h-64 bg-green-500"></Post>
                     </FreeHeightPanel>
-                </div>      
+                </div>
             </div>
         </div>
     );
