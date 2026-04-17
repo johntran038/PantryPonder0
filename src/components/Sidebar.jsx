@@ -1,6 +1,5 @@
 import React from "react";
 
-
 const Sidebar = ({ className, onClick }) => {
     return (
         <div className="bg-green-200">
