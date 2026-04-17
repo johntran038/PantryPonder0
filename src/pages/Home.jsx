@@ -8,6 +8,7 @@ import PopUp from "../components/PopUp";
 
 const Home = () => {
     
+    
     const [openPopup, setOpenPopup] = useState(false);
 
     return (
