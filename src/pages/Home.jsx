@@ -8,10 +8,8 @@ import PopUp from "../components/PopUp";
 
 const Home = () => {
     
-    
     const [openPopup, setOpenPopup] = useState(false);
 
-    
     return (
         <div className="">
             <div className="fixed inset-0 flex items-center justify-center z-999 pointer-events-none">
